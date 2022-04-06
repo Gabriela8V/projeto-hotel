@@ -1,0 +1,73 @@
+/* 
+Arquivo css para formação do site do Hotels.com
+*/
+
+/*
+Aplicar a formação a todos os elementos. Usaremos o 
+ateristico(*)
+*/
+
+* {
+  /* zerar as margens externas dos elementos */
+  margin: 0;
+  /* zerar as mensagens internas dos elementos */
+  padding: 0;
+  /* ajuste das caixas(box) dos elementos */
+  box-sizing: border-box;
+}
+header {
+  height: 300px; /*altura da caixa*/
+  /*adicionar uma imagem ao fundo */
+  background-image: url("Img/Hotel/hotel1.jpg");
+  /* ajustar a largura da imagem para 100%*/
+  background-size: 100%;
+  /* ajustar a posição em x e y da imagem de fundo */
+  background-position: 0 -275px;
+  /* animação no fundo */
+  transition: ease 2s;
+  padding-top: 100px;
+}
+h1 {
+  text-align: center;
+  font-family: verdana;
+  color: rgb(245, 236, 230);
+  /* aplicar sombra no texto*/
+  text-shadow: 10px 10px 5px black;
+}
+
+nav {
+  background-color: #c8c2ee;
+  text-align: center;
+}
+
+nav ul li {
+  /* dispor itens da lista(li) em linha */
+  display: inline-block;
+  /* aumentar a distância entre os elementos*/
+  padding: 10px;
+  transition: ease 1s;
+}
+/* ao passar o mouse sobre o link o fundo link deve 
+  alter suar cor*/
+
+nav ul li:hover {
+  background-color: slategray;
+}
+
+nav ul li a {
+  font-family: verdana;
+  font-size: 10pt;
+  color: rgb(118, 93, 207);
+  /* retirar o underliner do linnk */
+  text-decoration: none; /*nenhum*/
+}
+footer {
+  height: 300px; /*altura em 300px*/
+  background-color: rgb(157, 144, 187);
+  color: white;
+  font-family: arial;
+  padding-top: 40px;
+  /* dispor em form flexivel*/
+  display: flex;
+  flex-direction: row;
+}
