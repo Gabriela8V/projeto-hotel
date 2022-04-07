@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotels.com</title>
+    <!-- link para o arquivo de css -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+        <!-- definir o cabeçalho da pagina de fundo com uma 
+        imagem de fundo  e um texto para identificar
+    o titulo da pagina com a tag h1 -->
+
+    <header>
+        <a href="#" onclick="abrir()">&#9776;</a>
+        <h1> hotels.com</h1>
+    </header>
+    <nav>
+        <a href="#" id="fechar" onclick="fechar()"> &times;</a>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="pacotes.html">pacotes</a></li>
+            <li><a href="historia.html">historia</a></li>
+            <li><a href="contato.html">contato</a></li>  
+            <li><a href="localizacao.html">localizacao</a></li>
+        </ul>
+    </nav>
+
+    <main> 
+
+        <div>
+            <h4>São Paulo</h4>
+            <p></p>
+            <img src="img/saopaulo.jpg" alt="sao_paulo">
+            <p>R$ 1.550,320 </p>
+        </div>
+
+        <div>
+            <h4> Rio de Janeiro </h4>
+            <P> </P>
+            <img src="img/riodejaneiro.jpg" alt="rio_de_janeiro">
+            <p>R$ 2.544,20 </p>
+        </div>
+
+        <div>
+            <h4>salvador</h4>
+            <p></p>
+            <img src="img/salvador.jpg" alt="salvador">
+            <p>R$ 2.350,00</p>
+        </div>
+
+        <div>
+            <h4>Baiha </h4>
+            <p></p>
+            <img src="img/bahia.jpg" alt="bahia">
+            <p>R$ 3.355.65 </p>
+        </div>
+
+        <div>
+            <h4>Floripa</h4>
+            <P></P>
+            <img src="img/floripa2.png" alt="Floripa">
+            <h4></h4>
+            <p>R$ 12.342,40</p>
+        </div>
+
+        <div>
+            <h4>Fortaleza</h4>
+            <p></p>
+            <img src="img/fortaleza.jpg" alt="Fortaleza">
+            <h4></h4>
+            <p>R$14.235,51 </p>
+        </div>
+
+    
+    </main>
+
+    </main>
+
+    <footer>
+        <div id="endereco">
+            <p>
+                Rua General Dias Torres,244 
+                Jardim Colonial - São Paulo - SP 
+                Cep: 05638-100 
+                Telefone: 11 99568-2021 
+            </p>
+        </div>
+        <div id="redes">
+            <ul>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="" alt="Nos siga no instagram"></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><img src= "" alt="Se inscreva no nosso canal do youtube"></a></li>
+                <li><a href="https://www.facebook.com" target="_blank"><img src="" alt="nos siga no facebook"></a></li>
+            </ul>
+        </div>
+    </footer>
+        
+    <script>
+        function abrir(){
+            document.getElementsByTagName("nav")[0].style.left="0px";
+        } 
+
+        function fechar(){
+            document.getElementsByTagName("nav")[0].style.left="-150px";
+        }
+    </script>
+</body>
+</html>
