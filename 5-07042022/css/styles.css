@@ -1,0 +1,274 @@
+/* 
+Arquivo css para formação do site do Hotel
+*/
+
+/*
+Aplicar a formação a todos os elementos. Usaremos o 
+ateristico(*)
+*/
+
+* {
+  /* zerar as margens externas dos elementos */
+  margin: 0;
+  /* zerar as mensagens internas dos elementos */
+  padding: 0;
+  /* ajuste das caixas(box) dos elementos */
+  box-sizing: border-box;
+}
+header {
+  height: 300px; /*altura da caixa*/
+  /*adicionar uma imagem ao fundo */
+  background-image: url("../img/cafe5.jpg");
+  /* ajustar a largura da imagem para 100%*/
+  background-size: 100%;
+  /* ajustar a posição em x e y da imagem de fundo */
+  background-position: 0 -275px;
+  /* animação no fundo */
+  transition: ease 2s;
+  padding-top: 100px;
+}
+
+header a,
+#fechar {
+  opacity: 0;
+  transition: ease 0.5;
+}
+
+h1 {
+  text-align: center;
+  font-family: verdana;
+  color: rgb(245, 236, 230);
+  /* aplicar sombra no texto*/
+  text-shadow: 10px 10px 5px black;
+}
+
+nav {
+  background-color: #c8c2ee;
+  text-align: center;
+}
+
+nav ul li {
+  /* dispor itens da lista(li) em linha */
+  display: inline-block;
+  /* aumentar a distância entre os elementos*/
+  padding: 10px;
+  transition: ease 1s;
+}
+/* ao passar o mouse sobre o link o fundo link deve 
+  alter suar cor*/
+
+nav ul li:hover {
+  background-color: slategray;
+}
+
+nav ul li a {
+  font-family: verdana;
+  font-size: 10pt;
+  color: rgb(118, 93, 207);
+  /* retirar o underliner do linnk */
+  text-decoration: none; /*nenhum*/
+}
+footer {
+  height: 300px; /*altura em 300px*/
+  background-color: rgb(157, 144, 187);
+  color: white;
+  font-family: arial;
+  padding-top: 40px;
+  /* dispor em form flexivel*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+footer div {
+  width: 20%;
+  margin: 20px;
+}
+#redes ul li {
+  display: inline;
+  margin-left: 20px;
+}
+#redes ul li a img {
+  width: 40px;
+  height: 40px;
+}
+/*--------------Inicio do css home ---------------*/
+h2 {
+  font-family: Arial;
+  font-size: 20pt;
+  margin: 50px;
+  /*borda na parte inferior do h2*/
+  border-bottom: 1px solid rgb(228, 179, 179);
+}
+#home {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: verdana;
+  font-size: 12pt;
+  line-height: 20pt; /* espaçamento entre linhas*/
+  text-align: justify;
+}
+#imgHome {
+  text-align: center;
+}
+#imgHome img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 100px;
+  opacity: 0.7;
+  transition: ease 0.5;
+  /*mudar o ponteiro do mouse para uma mão*/
+  cursor: pointer;
+}
+#imgHome img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+/* ----------------------------------------------------Fim do setilo da Home--------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------Formatação CSS para a página contato----------------------------------------------------------------------------------*/
+main form {
+  width: 40%;
+  padding: 10px;
+  background-color: darkgray;
+  margin-left: auto;
+  margin-right: auto;
+}
+main form input[type="text"],
+main form input[type="email"],
+main form input[type="tel"],
+main form select,
+main form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 0px;
+  border-bottom: 1px solid silver;
+  border-radius: 5px;
+  display: block;
+}
+main form input[type="tel"],
+main form input select {
+  width: 30%;
+}
+main form textarea {
+  height: 300px;
+  border: 10px cornflowerblue;
+  margin-bottom: 10px;
+}
+main form input[type="submit"] {
+  padding: 10px;
+  border: 0px;
+  background-color: rgb(154, 184, 207);
+  font-weight: bold;
+  cursor: pointer;
+  color: darkslategrey;
+  margin-left: 0px;
+}
+/* ------------------------------------------------------------Formatação CSS para o mapa-----------------------------------------------------------------------------------------------------------------------------------*/
+#mapa iframe {
+  width: 100%;
+  height: 500px;
+}
+/* --------------------------------------------------------Area dos breakpoints -----------------------------------------------------------------------------------------------*/
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 0px) and (max-width: 575px) {
+  header {
+    background-size: cover;
+    background-position: 0px 0px;
+  }
+  nav {
+    width: 150px;
+    height: 100vh; /*altura da tela do dispositivo*/
+    position: absolute; /*definindo posição "fixa" na tela*/
+    z-index: 10000; /*empilhando fazendo ficar acima de  9999 itens*/
+    top: 0; /*posição de topo 0*/
+    left: -150px; /* posição inicial a esquerda 0 */
+    padding-top: 150px;
+  }
+  nav ul li {
+    display: block;
+    text-align: left;
+  }
+  #imgHome img {
+    border-radius: 0px;
+    opacity: 1;
+    transition: ease 0.5;
+  }
+  footer {
+    flex-direction: row;
+  }
+  footer div {
+    width: 80%;
+    margin: auto;
+  }
+
+  header a {
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    /* background-color: #ae97e2; */
+    color: rgb(5, 0, 0);
+    padding: 2px;
+    text-decoration: none;
+    font-size: 15pt;
+  }
+  #fechar {
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    font-size: 25pt;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-decoration: none;
+    transform: rotate(180deg);
+  }
+  iframe {
+    width: 90%;
+  }
+  #linha {
+    flex-direction: column;
+  }
+  #linha div {
+    width: 95%;
+  }
+  main form {
+    width: 90%;
+  }
+  #mapa form {
+    width: 90%;
+  }
+  body {
+    background-color: cadetblue;
+  }
+}
+
+@media (min-width: 576px) {
+  body {
+    background-color: rgb(161, 243, 175);
+  }
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body {
+    background-color: rgb(194, 144, 241);
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    background-color: rgb(160, 168, 238);
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    background-color: rgb(146, 211, 241);
+  }
+}

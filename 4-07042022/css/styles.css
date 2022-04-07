@@ -1,0 +1,33 @@
+body {
+  background-color: gray;
+}
+
+#conteiner {
+  border: 1px solid red;
+  width: 100%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#div1 {
+  background-color: blue;
+  flex: 0.5;
+}
+
+#div2 {
+  background-color: rgb(117, 216, 230);
+  flex: 0.5;
+}
+
+#div3 {
+  background-color: green;
+  flex: 5;
+}
+
+#div4 {
+  background-color: rgb(113, 62, 231);
+  flex: 0.1;
+}
