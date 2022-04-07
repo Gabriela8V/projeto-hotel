@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels.com</title>
+    <!-- Link para o arquivo de CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+ </head>
+<body>
+       <!-- Definir o Cabeçalho da página com uma
+         imagem de fundo e um texto para identificar
+        o titulo da página com a tag h1
+     -->
+
+<header>
+    <a href="#" onclick="abril()">&#9776;</a>
+    <h1>Hotels.com</h1> 
+</header>
+<nav>
+    <a href="#" id="fechar" onclick="fechar()">&times;</a>
+    <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="pacotes.html">Pacotes</a></li>
+        <li><a href="historia.html">História</a></li>
+        <li><a href="contato.html">contato</a></li>
+        <li><a href="localizacao.html">localização</a></li>
+    </ul>
+</nav>
+
+<main>
+     <h2>Contato</h2>
+     <form action="">
+         <input type="text" placeholder="Nome Completo" required>
+        <input type="email" placeholder="E-Mail"required>
+        <input type="tel" placeholder="Telefone">
+        <select name="" id="">
+         <option value="selecione">Selecione</option>
+         <option value="sugestão">Sugestão</option>
+         <option value="Elogio"></option>
+         <option value="duvida">Duvida</option>
+         <option value="critica">Critica</option>
+        </select>
+        <textarea >
+
+        </textarea>
+        <input type="submit" value="Enviar">
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+<footer>
+    <div id="endereco">
+
+        <p>
+            Rua General Dias Torres, 224 
+            Jardim Colonial - São Paulo - SP
+            CEP: 05638-100 
+            Telefone: 11-99568-2021
+        </p>
+
+    </div>
+         
+    <div id="redes">
+        <ul>
+            <li><a href="http://www.instragram.com"target="_blank"><img src="img/instagram.png" alt="Nosso instragram"></a></li>
+            <li><a href="http://www.youtube.com"target="_blank"><img src="img/youtube.png" alt="Nosso Canal do Youtube"></a></li>
+            <li><a href="http://www.facebook.com"target="_blank"><img src="img/facebook.png" alt="Nosso facebook"></a></li>
+        </ul>
+
+
+    </div>
+         
+</footer>
+<script>
+    function abril(){
+        document.getElementsByTagName("nav")[0].style.left="0px";
+    }
+    function fechar(){
+        document.getElementsByTagName("nav")[0].style.left="-150px"
+    }
+</script>
+</body>
+</html>
